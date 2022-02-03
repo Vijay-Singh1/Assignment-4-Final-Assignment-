@@ -114,6 +114,8 @@ body {
   border: none;
 }
 
+
+
 .nav-link .links i {
   margin-left: 8px;
 }
@@ -333,6 +335,11 @@ input::-webkit-inner-spin-button {
   color: #ffff;
 }
 
+.dream button:hover{
+  opacity: 0.8;
+  color: #ffff;
+}
+
 .social-media {
   position: absolute;
   top: 200px;
@@ -350,25 +357,62 @@ input::-webkit-inner-spin-button {
 
 .social-media a {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 
-.social-media a > img {
-  margin-top: 3px;
-  margin-bottom: 0px;
+.social-media a .fb {
+  position: absolute;
+  top:30px;
+  left: 20px;
+  
 }
+.social-media a .hr1 {
+  position: absolute;
+  top: 50px;
+  left: 13px;
+  color: #ffff;
+  opacity: 0.2;
+}
+
+.social-media a .twiter {
+  position: absolute;
+  top:80px;
+  left: 20px;
+  
+}
+
+.social-media a .hr2 {
+  position: absolute;
+  top: 100px;
+  left: 13px;
+  color: #ffff;
+  opacity: 0.2;
+}
+
+.social-media a .linkdin {
+  position: absolute;
+  top:130px;
+  left: 20px;
+  
+}
+
+.social-media a .hr3 {
+  position: absolute;
+  top: 155px;
+  left: 13px;
+  color: #ffff;
+  opacity: 0.2;
+}
+
 
 .social-media a .insta {
-  margin-bottom: 4px;
+  position: absolute;
+  top:180px;
+  left: 20px;
+  
 }
 
-.social-media a > hr {
-  margin-bottom: 2px;
-  margin-top: 1px;
-  opacity: 0.6;
-}
 
 /* specialization */
 
@@ -384,7 +428,7 @@ input::-webkit-inner-spin-button {
 
 .contact {
   width: 75%;
-  height: 210px;
+  height: 230px;
   background-image: linear-gradient(186deg, #e47312, #ff6361);
   position: absolute;
   top: -115px;
@@ -504,6 +548,21 @@ input::-webkit-inner-spin-button {
   letter-spacing: 1px;
   text-decoration: none;
 }
+
+.all-services:after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #e47312;
+  bottom: -6px;
+  left: 0px;
+}
+
+.all-services:hover:after{
+width: 100%;
+}
+
 
 .services {
   position: absolute;
@@ -650,6 +709,22 @@ input::-webkit-inner-spin-button {
   text-decoration: none;
 }
 
+.about a::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #e47312;
+  bottom: -6px;
+  left: 0px;
+}
+
+.about a:hover:after{
+width: 100%;
+}
+
+
+
 .experties {
   position: absolute;
   top: 1300px;
@@ -777,13 +852,26 @@ input::-webkit-inner-spin-button {
   position: absolute;
   top: 120px;
   right: 40px;
-
   font-family: "Dosis", sans-serif;
   color: #919198;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 1px;
   text-decoration: none;
+}
+
+.all-work:after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #e47312;
+  bottom: -6px;
+  left: 0px;
+}
+
+.all-work:hover:after{
+width: 100%;
 }
 
 
@@ -797,6 +885,48 @@ input::-webkit-inner-spin-button {
   justify-content: space-evenly;
   row-gap: 20px;
 }
+
+.view-container{
+  position: absolute;
+  width: 404px;
+  height: 361px;
+  
+}
+
+.view-container:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: .2s all;
+}
+
+
+
+
+.view-project1{
+  position: absolute;
+  top: 110px;
+  left: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right , #e47312, rgba(255, 99, 97, 0.78));
+  color: #ffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  visibility: hidden;
+}
+
+.site:hover .view-project1{
+  visibility: visible;
+  opacity: 1;
+}
+
+.view-container .view-project1:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: .2s all;
+}
+
+
 
 .banner {
   grid-column: 1 / span 3;
@@ -876,7 +1006,7 @@ input::-webkit-inner-spin-button {
   letter-spacing: 1px;
 }
 
-.professionals .about-team {
+.professionals .about-team{
   position: absolute;
   right: 60px;
   color: #919198;
@@ -884,6 +1014,20 @@ input::-webkit-inner-spin-button {
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 700;
+}
+
+.team a:after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #e47312;
+  bottom: -6px;
+  left: 0px;
+}
+
+.team a:hover:after{
+width: 100%;
 }
 
 .team-wrapper {
@@ -1375,8 +1519,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   top: 5080px;
   width: 100%;
-  height: 1600px;
-  border: 1px solid red;
+  height: 1560px;
 }
 
 .blogs-container .heading-blog{
@@ -1414,6 +1557,23 @@ input::-webkit-inner-spin-button {
   font-weight: 600;
   letter-spacing: 1px;
   text-decoration: none;
+}
+
+
+
+
+.all-blog::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #e47312;
+  bottom: -6px;
+  left: 0px;
+}
+
+.all-blog:hover:after{
+width: 100%;
 }
 
 
@@ -1641,7 +1801,6 @@ input::-webkit-inner-spin-button {
 
 
 .footer-head{
-  border: 1px solid black;
   position: absolute;
   top: 820px;
   display: flex;
@@ -1650,6 +1809,7 @@ input::-webkit-inner-spin-button {
   width: 100%;
   height: 180px;
   background-image: linear-gradient(to right, #E67218,#FB6556);
+  z-index: 1;
 }          
 
 
@@ -1668,3 +1828,219 @@ input::-webkit-inner-spin-button {
   font-size: 25px;
   letter-spacing: 3px;
 }
+
+
+.footer{
+  position: relative;
+  top: 1000px;
+  left: 5%;
+  right: auto;
+  width: 90%;
+  height: 561px;
+  background-color: #0a1229;
+  border: 1px solid #0a1229;
+}
+
+.footer .abouts h5{
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  color: #ffff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  z-index: 3;
+}
+
+.footer .abouts hr{
+  position: absolute;
+  top:87px;
+  left: 150px;
+}
+
+.footer .abouts p{
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  font-size: 17px;
+    line-height: 25px;
+  color: #fff;
+}
+
+.footer .abouts a{
+  position: absolute;
+  top: 290px;
+  left: 50px;
+  font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.footer .abouts a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: #ffff;
+    bottom: -6px;
+    left: 0px;
+}
+
+.footer .abouts a:hover:after{
+  width: 100%;
+}
+
+
+.footer .serv h5{
+  position: absolute;
+  top: 60px;
+  left: 420px;
+  color: #ffff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 3;
+  color: #ffff;
+}
+
+
+.footer .serv hr{
+  position: absolute;
+  top:87px;
+  left: 500px;
+}
+
+.footer-services{
+  position: relative;
+  top: 140px;
+  left: 420px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.footer .serv .footer-services .sr{
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffff;
+  width: fit-content;
+}
+
+
+
+.footer-contact{
+  position: absolute;
+}
+
+.footer-contact{
+  position: absolute;
+  top: 60px;
+  left: 790px;
+  font-size: 15px;
+  font-weight:600;
+  color: #ffff;
+}
+
+.contact-hr{
+  position: absolute; 
+  top:87px;
+  left: 880px;
+}
+
+.footer-contacts{
+  position: absolute;
+  top: 130px;
+  left: 785px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.footer-contacts .phone div{
+  display: flex;
+}
+
+
+.footer-contacts .phone div img{
+  margin-right: 15px;
+}
+
+
+.footer-contacts .phone p{
+  margin-left: 45px;
+}
+
+
+.time div{
+  display: flex;
+}
+
+.time div img{
+  margin-right: 15px;
+  margin-left: 7px;
+}
+
+.timing{
+  margin-bottom: 5px;
+  color: hsla(0, 0%, 100%, 0.7);
+  font-family: Dosis, sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  margin-left: 48px;
+  margin-top: 0px;
+}
+
+
+.mail div{
+  display: flex;
+
+}
+.mail div img{
+  margin-left: 8px;
+  margin-right: 12px;
+}
+
+.cont{
+  margin-bottom: 5px;
+  margin-left: 45px;
+  margin-top: 0px;
+  color: hsla(0, 0%, 100%, 0.7);
+  font-family: Dosis, sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+
+.logo2 {
+  position: absolute;
+  top: 6531px;
+  left: 115px;
+  width: 10rem;
+  height: 7rem;
+  background-color: #e47312;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.logo2  img {
+  max-width: 100%;
+  width: 90px;
+  height: 20px;
+  position: absolute;
+  top: 2.7rem;
+  vertical-align: middle;
+}
+
+
+
+
+
+
